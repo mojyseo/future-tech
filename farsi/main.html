@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOJYSEO</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div  id="searchdiv">
+    <button class="fa fa-fw fa-search" id="searchbtn" onclick="search()" href="#"></button>
+  </div>
+
+  <section class="startPage" id="startPage">
+    <div class="fake-nav">.</div>
+    <nav class="mainNav" id="navBar">
+      <h1 id="logoNav">Future Tech</h1>
+
+      <div class="menuNav">
+        <button href="#" id="mn1" class="menuNav tablink"
+          onclick="openPage('Home', 'mn1', this ,'#000 fixed center'),taketop()">Home</button>
+        <button href="#" id="mn2" class="menuNav tablink"
+          onclick="openPage('Products', 'mn2', this, '#085f63'),taketop()">Products</button>
+        <button href="#" id="mn3" class="menuNav tablink"
+          onclick="openPage('Services', 'mn3', this, '#49beb7'),taketop()">Services</button>
+        <button href="#" id="mn4" class="menuNav tablink"
+          onclick="openPage('Contact', 'mn4', this, '#facf5a'),taketop()">Contact</button>
+        <button href="#" id="mn5" class="menuNav tablink"
+          onclick="openPage('About', 'mn5', this, '#ff5959'),taketop()">About</button>
+      </div>
+    </nav>
+    <div id="Home" class="tabcontent">
+      <div id="holder-container">
+        <div class="fake-nav2">.</div>
+        <div class="homeHead heads">
+          <h3>We let Your Dreams</h3>
+          <p>Come true</p>
+        </div>
+        <div id="homecentercontainer">
+        <h1 id="homeCenter">Explore our world now!</h1>
+      </div>
+      </div>
+
+
+      <div class="dummycontainer" id="dummycontent1"> 
+        </div>
+
+
+    </div>
+
+    <div id="Products" class="tabcontent">
+      <div id="holder-container">
+        <div class="fake-nav2">.</div>
+        <div class="productsHead heads">
+          <h3>Products</h3>
+          <p>Some products for you to see!</p>
+        </div>
+        <div class="productsContent">
+          <h4>Coming soon...!</h4>
+          <p>wait for it!</p>
+        </div>
+      </div>
+      <div class="dummycontainer" id="dummycontent2">
+        </div>
+
+    </div>
+
+    <div id="Services" class="tabcontent">
+      <div id="holder-container">
+        <div class="fake-nav2">.</div>
+        <div class="serviceshead heads">
+          <h3>Services</h3>
+          <p>We can do everything on clouds for you!</p>
+        </div>
+        <div class="aboutContent">
+          <div class="aboutText">
+            <h3> Service list:</h3>
+            <p>developing any kind of website you want!</p>
+            <p>developing any kind of application you wish! </p>
+            <p>developing applications for all devices!</p>
+            <p>designing UI & UX just for you!</p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="dummycontainer" id="dummycontent3">
+        </div>
+
+
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <div id="holder-container">
+        <div class="fake-nav2">.</div>
+<div class="contactHead heads">
+        <h3>Contact</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+        <div class="contact-container">
+          <form action="#">
+            <h5>Send us a message!</h5>
+
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email-input" name="email" placeholder="Your Email.." required>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." required></textarea>
+
+            <input type="submit" value="Submit">
+
+
+          </form>
+        </div>
+      </div>
+      <div class="dummycontainer" id="dummycontent4">
+        </div>
+
+
+    </div>
+
+    <div id="About" class="tabcontent">
+      <div id="holder-container">
+        <div class="fake-nav2">.</div>
+        <div class="aboutHead heads">
+          <h3>About</h3>
+          <p>we are what we do.</p>
+        </div>
+        <div>
+          <div class="aboutContent">
+            <p id="aboutabout">we are a group of experienced developer/programmers who joined in a team to make
+              better experiences for you
+            </p>
+          </div>
+          <div class="photos-container">
+          <div class="photos">
+            <div class="photosContainer">
+              <img src="img_avatar.png" alt="Avatar" class="image">
+              <div class="overlay">My Name is John</div>
+            </div>
+            <div class="photosContainer">
+              <img src="img_avatar.png" alt="Avatar" class="image">
+              <div class="overlay">My Name is Mom</div>
+            </div>
+            <div class="photosContainer">
+              <img src="img_avatar.png" alt="Avatar" class="image">
+              <div class="overlay">My Name is Hon</div>
+            </div>
+            <div class="photosContainer">
+              <img src="img_avatar.png" alt="Avatar" class="image">
+              <div class="overlay">My Name is Moj</div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="dummycontainer" id="dummycontent5"> <!-- + footer + star animation -->
+      </div>
+
+
+
+    </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- STAR ANIMATION -->
+  <div class="bg-animation">
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div id='stars4'></div>
+  </div><!-- / STAR ANIMATION -->
+
+
+  <div id="mySidenav" class="sidenav sidenav-hide">
+ <button id="mn1" class="menuNav tablink"
+ onclick="openPage('Home', 'mn1', this ,'#000 fixed center'),taketop()">Home</button>
+<button id="mn2" class="menuNav tablink"
+ onclick="openPage('Products', 'mn2', this, '#085f63'),taketop()">Products</button>
+<button id="mn3" class="menuNav tablink"
+ onclick="openPage('Services', 'mn3', this, '#49beb7'),taketop()">Services</button>
+<button id="mn4" class="menuNav tablink"
+ onclick="openPage('Contact', 'mn4', this, '#facf5a'),taketop()">Contact</button>
+<button id="mn5" class="menuNav tablink"
+ onclick="openPage('About', 'mn5', this, '#ff5959'),taketop()">About</button>
+ <a href="javascript:void(0)" class="closebtn fa fa-times" id="closebtn" onclick="closeNav()"></a>
+
+</div>
+  
+<i class="ham-hide fa fa-bars" id="ham" onclick="openNav()"></i>
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
